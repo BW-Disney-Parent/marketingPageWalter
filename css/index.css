@@ -133,19 +133,28 @@ nav a {
   text-align: center;
   padding: 2%;
 }
-#features {
+#features,
+#buildTeam,
+#volunteers {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
-#features h2 {
+#features h2,
+#buildTeam h2,
+#volunteers h2 {
   align-self: flex-start;
   width: 100%;
   text-align: center;
   font-size: 2.8rem;
 }
-#features .featureBox {
+#features .featureBox,
+#buildTeam .featureBox,
+#volunteers .featureBox,
+#features .buildBox,
+#buildTeam .buildBox,
+#volunteers .buildBox {
   text-align: center;
   width: 45%;
 }
