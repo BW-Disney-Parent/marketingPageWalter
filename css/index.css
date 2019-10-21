@@ -1,0 +1,169 @@
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/oswald/v26/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUZiYA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto Condensed'), local('RobotoCondensed-Regular'), url(https://fonts.gstatic.com/s/robotocondensed/v18/ieVl2ZhZI2eCN5jzbjEETS9weq8-19K7CA.ttf) format('truetype');
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  color: #253b56;
+  background: url(/images/background.png) top center repeat-x;
+  background-color: #1D96D7;
+  line-height: 2;
+  font-size: 1.4rem;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 3px;
+}
+i {
+  font-size: 4rem;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  max-width: 940px;
+  margin: 0 auto;
+  border-radius: 0 0 12px 12px;
+}
+header h1 {
+  color: #0470ab;
+  margin-left: 2%;
+  padding: 1%;
+  font-size: 4rem;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin-right: 2%;
+  font-size: 2rem;
+}
+nav a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #253b56;
+  padding: 10px;
+}
+.container {
+  width: 940px;
+  background-color: white;
+  margin: 20px auto 0;
+  border-radius: 12px;
+}
+.hr {
+  width: 90%;
+  margin: 0 5%;
+  border: 1px solid #A1AFC0;
+}
+.callToAction {
+  position: relative;
+}
+.callToAction img {
+  border-radius: 12px;
+  width: 90%;
+  margin: 5%;
+  position: relative;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+.callToAction .topText {
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.callToAction .topText h1 {
+  font-size: 4rem;
+  letter-spacing: 1px;
+}
+.callToAction .btn {
+  text-align: center;
+  color: white;
+  background-color: #6FA623;
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  padding: 5px 50px;
+  border-radius: 12px;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.about {
+  width: 90%;
+  margin: 0 5% 5% 5%;
+}
+.about h2 {
+  text-align: center;
+  font-size: 2.8rem;
+  letter-spacing: 3px;
+}
+.about p {
+  color: #253B56;
+  font-size: 1.8rem;
+  line-height: 27px;
+  text-align: center;
+  padding: 2%;
+}
+.features {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  max-width: 940px;
+  margin: 20px auto 0;
+  border-radius: 12px 12px 0 0;
+}
+footer h1 {
+  color: #0470ab;
+  margin-left: 2%;
+  padding: 1%;
+  font-size: 4rem;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin-right: 2%;
+  font-size: 2rem;
+}
+nav a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #253b56;
+  padding: 10px;
+}
