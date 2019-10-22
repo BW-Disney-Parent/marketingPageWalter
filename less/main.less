@@ -1,7 +1,8 @@
 .container {
   width: 940px;
   background-color: @page-white;
-  margin: 20px auto 0;
+  margin: 20px auto;
+  padding-bottom: 10px;
   border-radius: 12px;
 }
 
@@ -87,7 +88,21 @@
   }
 
   .featureBox, .buildBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    width: 45%;
+    border: 1px solid @support-grey;
+    padding: 2%;
+    width: 50%;
+
+    i {
+      margin-bottom: 4%;
+      font-size: 5.8rem;
+    }
+
+    p {
+      font-size: 1.8rem;
+    }
   }
 }
