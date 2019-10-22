@@ -73,9 +73,9 @@
   width: 90%;
   margin: 0 5% 5% 5%;
 
-  h2 {
+  h1 {
     text-align: center;
-    font-size: 2.8rem;
+    font-size: 4rem;
   }
 
   p {
@@ -93,11 +93,11 @@
   align-items: center;
   flex-wrap: wrap;
 
-  h2 {
+  h1 {
     align-self: flex-start;
     width: 100%;
     text-align: center;
-    font-size: 2.8rem;
+    font-size: 4rem;
   }
 
   .featureBox, .buildBox {
@@ -109,6 +109,10 @@
     padding: 2%;
     width: 45%;
 
+    @media @mobile {
+      width: 100%;
+    }
+
     i {
       margin-bottom: 4%;
       font-size: 5.8rem;
@@ -116,6 +120,32 @@
 
     p {
       font-size: 1.8rem;
+    }
+
+    img {
+      border-radius: 12px;
+      height: 40%;
+      width: 40%;
+    }
+
+    h3 {
+      font-size: 2.5rem;
+    }
+
+    h4 {
+      font-size: 1.8rem;
+    }
+
+    a {
+      text-align: center;
+      text-decoration: none;
+      color: @page-white;
+      background-color: #6FA623;
+      font-size: 2.5rem;
+      font-weight: bold;
+      letter-spacing: 3px;
+      padding: 5px 50px;
+      border-radius: 12px;
     }
   }
 }

@@ -159,9 +159,9 @@ nav a {
   width: 90%;
   margin: 0 5% 5% 5%;
 }
-#about h2 {
+#about h1 {
   text-align: center;
-  font-size: 2.8rem;
+  font-size: 4rem;
 }
 #about p {
   color: #253b56;
@@ -178,13 +178,13 @@ nav a {
   align-items: center;
   flex-wrap: wrap;
 }
-#features h2,
-#buildTeam h2,
-#volunteers h2 {
+#features h1,
+#buildTeam h1,
+#volunteers h1 {
   align-self: flex-start;
   width: 100%;
   text-align: center;
-  font-size: 2.8rem;
+  font-size: 4rem;
 }
 #features .featureBox,
 #buildTeam .featureBox,
@@ -199,6 +199,16 @@ nav a {
   border: 1px solid #dfdfdf;
   padding: 2%;
   width: 45%;
+}
+@media (max-width: 500px) {
+  #features .featureBox,
+  #buildTeam .featureBox,
+  #volunteers .featureBox,
+  #features .buildBox,
+  #buildTeam .buildBox,
+  #volunteers .buildBox {
+    width: 100%;
+  }
 }
 #features .featureBox i,
 #buildTeam .featureBox i,
@@ -216,6 +226,48 @@ nav a {
 #buildTeam .buildBox p,
 #volunteers .buildBox p {
   font-size: 1.8rem;
+}
+#features .featureBox img,
+#buildTeam .featureBox img,
+#volunteers .featureBox img,
+#features .buildBox img,
+#buildTeam .buildBox img,
+#volunteers .buildBox img {
+  border-radius: 12px;
+  height: 40%;
+  width: 40%;
+}
+#features .featureBox h3,
+#buildTeam .featureBox h3,
+#volunteers .featureBox h3,
+#features .buildBox h3,
+#buildTeam .buildBox h3,
+#volunteers .buildBox h3 {
+  font-size: 2.5rem;
+}
+#features .featureBox h4,
+#buildTeam .featureBox h4,
+#volunteers .featureBox h4,
+#features .buildBox h4,
+#buildTeam .buildBox h4,
+#volunteers .buildBox h4 {
+  font-size: 1.8rem;
+}
+#features .featureBox a,
+#buildTeam .featureBox a,
+#volunteers .featureBox a,
+#features .buildBox a,
+#buildTeam .buildBox a,
+#volunteers .buildBox a {
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #6FA623;
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  padding: 5px 50px;
+  border-radius: 12px;
 }
 #contact {
   display: flex;
