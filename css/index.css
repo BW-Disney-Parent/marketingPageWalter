@@ -3,7 +3,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/oswald/v26/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUZiYA.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/oswald/v29/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUZiYA.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Roboto Condensed';
@@ -58,7 +58,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 60%;
   margin-right: 2%;
   font-size: 2rem;
 }
@@ -66,12 +66,13 @@ nav a {
   font-weight: bold;
   text-decoration: none;
   color: #253b56;
-  padding: 10px;
+  padding: 15px;
 }
 .container {
   width: 940px;
   background-color: #ffffff;
-  margin: 20px auto 0;
+  margin: 20px auto;
+  padding-bottom: 10px;
   border-radius: 12px;
 }
 .hr {
@@ -155,8 +156,30 @@ nav a {
 #features .buildBox,
 #buildTeam .buildBox,
 #volunteers .buildBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  width: 45%;
+  border: 1px solid #dfdfdf;
+  padding: 2%;
+  width: 50%;
+}
+#features .featureBox i,
+#buildTeam .featureBox i,
+#volunteers .featureBox i,
+#features .buildBox i,
+#buildTeam .buildBox i,
+#volunteers .buildBox i {
+  margin-bottom: 4%;
+  font-size: 5.8rem;
+}
+#features .featureBox p,
+#buildTeam .featureBox p,
+#volunteers .featureBox p,
+#features .buildBox p,
+#buildTeam .buildBox p,
+#volunteers .buildBox p {
+  font-size: 1.8rem;
 }
 footer {
   display: flex;
@@ -173,7 +196,7 @@ footer h1 {
   padding: 1%;
   font-size: 4rem;
 }
-nav {
+footer nav {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -181,7 +204,7 @@ nav {
   margin-right: 2%;
   font-size: 2rem;
 }
-nav a {
+footer nav a {
   font-weight: bold;
   text-decoration: none;
   color: #253b56;
