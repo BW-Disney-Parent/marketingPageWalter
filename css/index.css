@@ -49,10 +49,27 @@ header {
   border-radius: 0 0 12px 12px;
 }
 header h1 {
-  color: #0470ab;
   margin-left: 2%;
   padding: 1%;
   font-size: 4rem;
+}
+header h1 a {
+  text-decoration: none;
+  color: #0470ab;
+}
+@media (max-width: 500px) {
+  header h1 {
+    padding: 0;
+    margin: 0;
+  }
+}
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 2%;
+  }
 }
 nav {
   display: flex;
@@ -68,12 +85,24 @@ nav a {
   color: #253b56;
   padding: 15px;
 }
+@media (max-width: 500px) {
+  nav {
+    width: 100%;
+    margin: 0;
+  }
+}
 .container {
   width: 940px;
   background-color: #ffffff;
   margin: 20px auto;
   padding-bottom: 10px;
   border-radius: 12px;
+}
+@media (max-width: 500px) {
+  .container {
+    margin: 2%;
+    width: 96%;
+  }
 }
 .hr {
   width: 90%;
@@ -92,6 +121,11 @@ nav a {
   filter: blur(2px);
   -webkit-filter: blur(2px);
 }
+@media (max-width: 500px) {
+  #callToAction img {
+    height: 65vh;
+  }
+}
 #callToAction .topText {
   text-align: center;
   color: #ffffff;
@@ -103,6 +137,11 @@ nav a {
 #callToAction .topText h1 {
   font-size: 4rem;
   letter-spacing: 1px;
+}
+@media (max-width: 500px) {
+  #callToAction .topText h1 {
+    font-size: 3rem;
+  }
 }
 #callToAction .btn {
   text-align: center;
@@ -123,9 +162,9 @@ nav a {
   width: 90%;
   margin: 0 5% 5% 5%;
 }
-#about h2 {
+#about h1 {
   text-align: center;
-  font-size: 2.8rem;
+  font-size: 4rem;
 }
 #about p {
   color: #253b56;
@@ -142,13 +181,20 @@ nav a {
   align-items: center;
   flex-wrap: wrap;
 }
-#features h2,
-#buildTeam h2,
-#volunteers h2 {
+#features p,
+#buildTeam p,
+#volunteers p {
+  text-align: center;
+  font-size: 1.8rem;
+  width: 75%;
+}
+#features h1,
+#buildTeam h1,
+#volunteers h1 {
   align-self: flex-start;
   width: 100%;
   text-align: center;
-  font-size: 2.8rem;
+  font-size: 4rem;
 }
 #features .featureBox,
 #buildTeam .featureBox,
@@ -162,7 +208,17 @@ nav a {
   text-align: center;
   border: 1px solid #dfdfdf;
   padding: 2%;
-  width: 50%;
+  width: 45%;
+}
+@media (max-width: 500px) {
+  #features .featureBox,
+  #buildTeam .featureBox,
+  #volunteers .featureBox,
+  #features .buildBox,
+  #buildTeam .buildBox,
+  #volunteers .buildBox {
+    width: 100%;
+  }
 }
 #features .featureBox i,
 #buildTeam .featureBox i,
@@ -181,6 +237,52 @@ nav a {
 #volunteers .buildBox p {
   font-size: 1.8rem;
 }
+#features .featureBox img,
+#buildTeam .featureBox img,
+#volunteers .featureBox img,
+#features .buildBox img,
+#buildTeam .buildBox img,
+#volunteers .buildBox img {
+  border-radius: 12px;
+  height: 40%;
+  width: 40%;
+}
+#features .featureBox h3,
+#buildTeam .featureBox h3,
+#volunteers .featureBox h3,
+#features .buildBox h3,
+#buildTeam .buildBox h3,
+#volunteers .buildBox h3 {
+  font-size: 2.5rem;
+}
+#features .featureBox h4,
+#buildTeam .featureBox h4,
+#volunteers .featureBox h4,
+#features .buildBox h4,
+#buildTeam .buildBox h4,
+#volunteers .buildBox h4 {
+  font-size: 1.8rem;
+}
+#features .featureBox a,
+#buildTeam .featureBox a,
+#volunteers .featureBox a,
+#features .buildBox a,
+#buildTeam .buildBox a,
+#volunteers .buildBox a {
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #6FA623;
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  padding: 5px 50px;
+  border-radius: 12px;
+}
+#volunteers h1 {
+  margin-top: 5%;
+  border-top: 2px solid #dfdfdf;
+}
 footer {
   display: flex;
   justify-content: space-between;
@@ -190,11 +292,25 @@ footer {
   margin: 20px auto 0;
   border-radius: 12px 12px 0 0;
 }
+@media (max-width: 500px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 2%;
+  }
+}
 footer h1 {
   color: #0470ab;
   margin-left: 2%;
   padding: 1%;
   font-size: 4rem;
+}
+@media (max-width: 500px) {
+  footer h1 {
+    padding: 0;
+    margin: 0;
+  }
 }
 footer nav {
   display: flex;
@@ -209,4 +325,10 @@ footer nav a {
   text-decoration: none;
   color: #253b56;
   padding: 10px;
+}
+@media (max-width: 500px) {
+  footer nav {
+    width: 100%;
+    margin: 0;
+  }
 }

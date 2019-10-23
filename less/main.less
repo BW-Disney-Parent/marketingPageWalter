@@ -4,6 +4,11 @@
   margin: 20px auto;
   padding-bottom: 10px;
   border-radius: 12px;
+
+  @media @mobile {
+    margin: 2%;
+    width: 96%;
+  }
 }
 
 .hr {
@@ -23,6 +28,10 @@
     position: relative;  
     filter: blur(2px);
     -webkit-filter: blur(2px);
+
+    @media @mobile {
+      height: 65vh;
+    }
   }
 
   .topText {
@@ -36,6 +45,10 @@
     h1 {
       font-size: 4rem;
       letter-spacing: 1px;
+
+      @media @mobile {
+        font-size: 3rem;
+      }
     }
   }
 
@@ -60,9 +73,9 @@
   width: 90%;
   margin: 0 5% 5% 5%;
 
-  h2 {
+  h1 {
     text-align: center;
-    font-size: 2.8rem;
+    font-size: 4rem;
   }
 
   p {
@@ -80,11 +93,17 @@
   align-items: center;
   flex-wrap: wrap;
 
-  h2 {
+  p {
+    text-align: center;
+    font-size: 1.8rem;
+    width: 75%;
+  }
+
+  h1 {
     align-self: flex-start;
     width: 100%;
     text-align: center;
-    font-size: 2.8rem;
+    font-size: 4rem;
   }
 
   .featureBox, .buildBox {
@@ -94,7 +113,11 @@
     text-align: center;
     border: 1px solid @support-grey;
     padding: 2%;
-    width: 50%;
+    width: 45%;
+
+    @media @mobile {
+      width: 100%;
+    }
 
     i {
       margin-bottom: 4%;
@@ -104,5 +127,36 @@
     p {
       font-size: 1.8rem;
     }
+
+    img {
+      border-radius: 12px;
+      height: 40%;
+      width: 40%;
+    }
+
+    h3 {
+      font-size: 2.5rem;
+    }
+
+    h4 {
+      font-size: 1.8rem;
+    }
+
+    a {
+      text-align: center;
+      text-decoration: none;
+      color: @page-white;
+      background-color: #6FA623;
+      font-size: 2.5rem;
+      font-weight: bold;
+      letter-spacing: 3px;
+      padding: 5px 50px;
+      border-radius: 12px;
+    }
   }
+}
+
+#volunteers h1 {
+  margin-top: 5%;
+  border-top: 2px solid @support-grey;
 }
